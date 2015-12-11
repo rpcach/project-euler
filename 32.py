@@ -12,7 +12,7 @@ def main():
 					print(panDigits)
 	
 	sum = 0
-	for x in array:
+	for x in panDigits:
 		sum += x
 
 	print(sum)
