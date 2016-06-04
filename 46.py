@@ -6,10 +6,13 @@ def main():
 	for x in range(1,100000):
 		array.append(2*x*x)
 
-	for x in range(3,100000,2):
+	x = 3
+	while True:
 		if not isPrime(x) and not conjectureWorks(x,array):
 			print(x)
 			break
+		x += 2
+	print('done')
 
 def conjectureWorks(n,array):
 	for y in array:
